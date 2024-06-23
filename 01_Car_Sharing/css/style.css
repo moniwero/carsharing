@@ -8,9 +8,9 @@
   box-sizing: border-box;
 }
 
-/* body * {
-    border: 1px dotted blue;
-} */
+body * {
+  border: 1px dotted blue;
+}
 
 body {
   color: white;
@@ -183,4 +183,48 @@ header {
 
 .lines::after {
   margin-left: 10px;
+}
+
+.blog-photo-img {
+  width: 352px;
+  height: 234px;
+}
+
+.blog-artice-title {
+  text-transform: uppercase;
+  margin: 26px auto;
+  font-weight: 231px;
+  height: 26px;
+  font-size: 19px;
+  color: #6a6a6a;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.blog-article-text {
+  color: #6a6a6a;
+  margin-bottom: 26px;
+  width: 260px;
+  height: 79px;
+  font: normal normal 300 14px/19px "Open Sans";
+}
+
+.blog-btn {
+  padding: 5px 29px;
+  width: 142px;
+  height: 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--accent-color);
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Nunito Sans";
+  display: flex;
+  align-items: center;
+}
+
+.blog-content .container {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
 }
