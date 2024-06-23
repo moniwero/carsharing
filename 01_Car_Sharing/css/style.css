@@ -1,5 +1,7 @@
 :root {
   --main-color: #ff0000;
+  --accent-color: white;
+  --main-text-color: #000000;
 }
 
 * {
@@ -11,7 +13,6 @@
 } */
 
 body {
-  background-color: black;
   color: white;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -79,7 +80,7 @@ header {
 
 .nav-list a {
   text-decoration: none;
-  color: white;
+  color: var(--accent-color);
   display: inline-block;
   width: 100%;
   height: 93px;
@@ -123,11 +124,11 @@ header {
 
 .button-alert {
   background-color: var(--main-color);
-  color: white;
+  color: var(--accent-color);
 }
 
 .button-info {
-  background-color: white;
+  background-color: var(--accent-color);
   color: var(--main-color);
 }
 
@@ -146,4 +147,40 @@ header {
   position: absolute;
   left: 50%;
   bottom: 7px;
+  transform: translate(-50%, 0);
+}
+
+.blog {
+  background-color: var(--accent-color);
+  padding-top: 95px;
+  color: var(--main-text-color);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.lines::before,
+.lines::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 50px;
+  background-color: var(--main-color);
+  position: relative;
+  top: 15px;
+}
+
+.lines::before {
+  margin-right: 10px;
+}
+
+.lines::after {
+  margin-left: 10px;
 }
