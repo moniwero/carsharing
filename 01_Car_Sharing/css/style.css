@@ -8,9 +8,9 @@
   box-sizing: border-box;
 }
 
-body * {
+/* body * {
   border: 1px dotted blue;
-} 
+} */
 
 body {
   color: white;
@@ -232,7 +232,7 @@ header {
 }
 
 .service {
-  background-color: #28272C;
+  background-color: #28272c;
   color: white;
 }
 
@@ -244,6 +244,7 @@ header {
 .service-title {
   font-size: 35px;
   font-weight: bold;
+  margin-top: 60px;
 }
 
 .lines::before,
@@ -268,7 +269,7 @@ header {
 .service-photo-img {
   width: 170px;
   height: 170px;
-  margin-left: 47px;
+  margin-left: 30px;
 }
 
 .service-artice-title {
@@ -284,9 +285,10 @@ header {
 .service-article-text {
   color: #6a6a6a;
   margin-bottom: 26px;
-  width: 260px;
-  height: 79px;
-  font: normal normal 300 14px/19px "Open Sans";
+  width: 231px;
+  height: 80px;
+  font-size: 14px;
+  font-family: "Open Sans";
   text-align: center;
 }
 
@@ -298,22 +300,30 @@ header {
   text-decoration: none;
   background-color: var(--main-color);
   color: var(--accent-color);
-  display: inline-block;
   font-size: 14px;
   display: flex;
   align-items: center;
-  margin-left: 60px;
+  margin-left: 50px;
+  margin-bottom: 100px;
 }
 
 .service .container {
-  margin: 100px auto;
+  margin: 75px auto;
   display: flex;
   justify-content: space-around;
 }
 
 .contact-title {
-    font-size: 35px;
-    font-weight: bold;
-    color: #000000;
-    margin-top: 65px;
-  }
+  font-size: 35px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 65px;
+}
+
+.form-photo {
+  width: 444px;
+  height: 317px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
