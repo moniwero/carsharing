@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-body * {
+ body * {
   border: 1px dotted blue;
 }
 
@@ -109,7 +109,9 @@ header {
 
 .info {
   font-size: 16px;
+  font-weight: bold;
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .buttons {
@@ -229,85 +231,84 @@ header {
   justify-content: space-around;
 }
 
-
-
 .service {
-    background-color: black;
-    padding-top: 95px;
-    color: white;
-  }
-  
-  .center {
+  background-color: black;
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.service-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.lines::before,
+.lines::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 50px;
+  background-color: var(--main-color);
+  position: relative;
+  top: 15px;
+}
+
+.lines::before {
+  margin-right: 10px;
+}
+
+.lines::after {
+  margin-left: 10px;
+}
+
+.service-article a {
     display: flex;
     justify-content: center;
-  }
-  
-  .service-title {
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .lines::before,
-  .lines::after {
-    content: "";
-    display: inline-block;
-    height: 3px;
-    width: 50px;
-    background-color: var(--main-color);
-    position: relative;
-    top: 15px;
-  }
-  
-  .lines::before {
-    margin-right: 10px;
-  }
-  
-  .lines::after {
-    margin-left: 10px;
-  }
+} 
 
+.service-photo-img {
+  width: 170px;
+  height: 170px;
+}
 
-  .service-photo-img {
-    width: 170px;
-    height: 170px;
-  }
-  
-  .service-artice-title {
-    text-transform: uppercase;
-    margin: 26px auto;
-    font-weight: 231px;
-    height: 26px;
-    font-size: 19px;
-    color: #6a6a6a;
-    font-family: "Nunito Sans", sans-serif;
-  }
-  
-  .service-article-text {
-    color: #6a6a6a;
-    margin-bottom: 26px;
-    width: 260px;
-    height: 79px;
-    font: normal normal 300 14px/19px "Open Sans";
-    text-align: center;
-  }
-  
-  .service-btn {
-    padding: 5px 29px;
-    width: 142px;
-    height: 40px;
-    border-radius: 40px;
-    text-decoration: none;
-    background-color: var(--main-color);
-    color: var(--accent-color);
-    display: inline-block;
-    font-size: 14px;
-    font-family: "Nunito Sans";
-    display: flex;
-    align-items: center;
-  }
-  
-  .service-content .container {
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-around;
-  }
+.service-artice-title {
+  text-transform: uppercase;
+  margin: 26px auto;
+  font-weight: 231px;
+  height: 26px;
+  font-size: 19px;
+}
+
+.service-article-text {
+  color: #6a6a6a;
+  margin-bottom: 26px;
+  width: 260px;
+  height: 79px;
+  font: normal normal 300 14px/19px "Open Sans";
+  text-align: center;
+}
+
+.service-btn {
+  padding: 5px 29px;
+  width: 142px;
+  height: 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--accent-color);
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Nunito Sans";
+  display: flex;
+  align-items: center;
+}
+
+.service .container {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+}
