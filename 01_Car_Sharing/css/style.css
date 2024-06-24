@@ -8,9 +8,9 @@
   box-sizing: border-box;
 }
 
- body * {
+body * {
   border: 1px dotted blue;
-}
+} 
 
 body {
   color: white;
@@ -232,7 +232,7 @@ header {
 }
 
 .service {
-  background-color: black;
+  background-color: #28272C;
   color: white;
 }
 
@@ -265,14 +265,10 @@ header {
   margin-left: 10px;
 }
 
-.service-article a {
-    display: flex;
-    justify-content: center;
-} 
-
 .service-photo-img {
   width: 170px;
   height: 170px;
+  margin-left: 47px;
 }
 
 .service-artice-title {
@@ -281,6 +277,8 @@ header {
   font-weight: 231px;
   height: 26px;
   font-size: 19px;
+  display: flex;
+  justify-content: center;
 }
 
 .service-article-text {
@@ -302,9 +300,9 @@ header {
   color: var(--accent-color);
   display: inline-block;
   font-size: 14px;
-  font-family: "Nunito Sans";
   display: flex;
   align-items: center;
+  margin-left: 60px;
 }
 
 .service .container {
@@ -312,3 +310,10 @@ header {
   display: flex;
   justify-content: space-around;
 }
+
+.contact-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 65px;
+  }
