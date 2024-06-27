@@ -395,7 +395,7 @@ input[type="checkbox"] + label {
   margin-top: 10px;
   margin-bottom: 20px;
   cursor: pointer;
-  width: 412px;
+  width: 435px;
   height: 71px;
 }
 
@@ -415,6 +415,7 @@ input[type="checkbox"] + label::before {
 label {
   color: #b2b2b2;
   font: normal normal 300 10px/14px "Open Sans";
+  text-align: start;
 }
 
 /* Stylizacja zaznaczonego checkboxa */
