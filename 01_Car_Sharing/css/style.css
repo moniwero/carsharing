@@ -13,8 +13,9 @@
 } */
 
 body {
-  color: white;
+  background-color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
+  color: white;
 }
 
 header {
@@ -154,7 +155,7 @@ header {
 
 .blog {
   background-color: var(--accent-color);
-  padding-top: 95px;
+  padding-top: 90px;
   color: var(--main-text-color);
 }
 
@@ -207,7 +208,8 @@ header {
   margin-bottom: 26px;
   width: 260px;
   height: 79px;
-  font: normal normal 300 14px/19px "Open Sans";
+  font-size: 19px;
+  font-family: "Open Sans";
 }
 
 .blog-btn {
@@ -217,6 +219,7 @@ header {
   border-radius: 40px;
   text-decoration: none;
   background-color: var(--main-color);
+  box-shadow: #ff00004d;
   color: var(--accent-color);
   display: inline-block;
   font-size: 14px;
@@ -226,7 +229,7 @@ header {
 }
 
 .blog-content .container {
-  margin: 100px auto;
+  margin: 45px auto;
   display: flex;
   justify-content: space-around;
 }
@@ -274,7 +277,8 @@ header {
 
 .service-artice-title {
   text-transform: uppercase;
-  margin: 26px auto;
+  margin-top: 24px;
+  margin-bottom: 15px;
   font-weight: 231px;
   height: 26px;
   font-size: 19px;
@@ -283,13 +287,12 @@ header {
 }
 
 .service-article-text {
-  color: #6a6a6a;
-  margin-bottom: 26px;
+  color: #b2b2b2;
   width: 231px;
   height: 80px;
-  font-size: 14px;
-  font-family: "Open Sans";
+  font: normal normal normal 14px/19px "Open Sans";
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .service-btn {
@@ -326,4 +329,115 @@ header {
   margin-top: 35px;
   display: flex;
   justify-content: center;
+}
+
+form {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form {
+  margin: 25px 0;
+  display: flex;
+}
+
+input[type="text"] {
+  width: 444px;
+  height: 38px;
+  text-align: left;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 16px;
+}
+
+input[type="email"] {
+  width: 444px;
+  height: 38px;
+  text-align: left;
+  margin-bottom: 16px;
+  padding: 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b2b2b2;
+  font-size: 16px;
+  font-family: "Nunito Sans";
+}
+
+textarea {
+  width: 444px;
+  height: 140px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ff0000;
+  box-shadow: 0px 1px 6px #ff00004d;
+}
+
+/* Ukrycie domyślnego checkboxa */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Stylizacja niestandardowego checkboxa */
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 412px;
+  height: 71px;
+}
+
+/* Tworzenie designu checkboxa */
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #d1d1d1;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+label {
+  color: #b2b2b2;
+  font: normal normal 300 10px/14px "Open Sans";
+}
+
+/* Stylizacja zaznaczonego checkboxa */
+input[type="checkbox"]:checked + label::before {
+  background: transparent url(../images/Icon\ Check.svg) center 6px no-repeat
+    padding-box;
+}
+
+.form-btn {
+  width: 142px;
+  height: 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #ff0000;
+  box-shadow: 0px 3px 6px #ff00004d;
+  margin-bottom: 65px;
+  margin-top: 20px;
+}
+
+button {
+  margin-left: 300px;
 }
