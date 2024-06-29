@@ -88,6 +88,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
 }
 
 .nav-list a:hover {
@@ -133,6 +134,7 @@ header {
 .button-info {
   background-color: var(--accent-color);
   color: var(--main-color);
+  font-weight: bold;
 }
 
 .space-right {
@@ -316,29 +318,34 @@ header {
   justify-content: space-around;
 }
 
+.contact .form {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-title {
   font-size: 35px;
   font-weight: bold;
   color: #000000;
-  margin-top: 65px;
 }
 
 .form-photo {
   width: 444px;
   height: 317px;
-  margin-top: 35px;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 form {
   flex-direction: column;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 .form {
-  margin: 25px 0;
+  margin-left: 5px;
   display: flex;
+  margin-top: 30px;
 }
 
 input[type="text"] {
@@ -391,9 +398,8 @@ input[type="checkbox"] {
 /* Stylizacja niestandardowego checkboxa */
 input[type="checkbox"] + label {
   position: relative;
-  padding-left: 30px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  padding-left: 32px;
+  margin-top: 20px;
   cursor: pointer;
   width: 435px;
   height: 71px;
@@ -403,6 +409,7 @@ input[type="checkbox"] + label {
 input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
+  margin-top: 4px;
   left: 0;
   top: 0;
   width: 22px;
@@ -441,4 +448,65 @@ input[type="checkbox"]:checked + label::before {
 
 button {
   margin-left: 300px;
+}
+
+.page-footer {
+  height: 233px;
+  background: #28272c;
+  padding: 40px;
+}
+
+.page-footer-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 97px;
+}
+
+.footer-logo {
+  font: normal normal bold 25px/34px "Nunito Sans";
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.footer-logo span {
+  color: var(--main-color);
+  margin-right: 5px;
+}
+
+.footer-logo img {
+  width: 17px;
+  height: 19px;
+  margin-right: 7px;
+}
+
+li a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0, 5s;
+}
+
+.page-footer-nav-list li,
+.page-footer-nav-list-second li {
+  margin-bottom: 7px;
+  height: 19px;
+  margin-right: 140px;
+}
+
+.page-footer-nav li a:hover {
+  color: #ff0000;
+}
+
+.page-footer-nav {
+  display: flex;
+}
+
+.page-footer-copyright {
+  color: #d1d1d1;
+  font-size: 12px;
 }
